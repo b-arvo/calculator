@@ -1,0 +1,100 @@
+body {
+    background-color: lightblue;
+}
+
+.top {
+    background-color: #EFEFEF;
+}
+
+.top button {
+    background-color: #EFEFEF;
+}
+
+.middle {
+    border-left: solid #C7C7C7;
+    border-width: thin;
+}
+
+.bottom {
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.bottomRow td.thisOne{
+    border-bottom-left-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    max-width: 400px;
+    width: 35%;
+}
+
+td {
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+    /* border-style: solid;
+    border-color: grey;
+    border-width: thin; */
+    background-color: #FFFFFF;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover, td:hover {
+    background-color: #C7C7C7;
+}
+
+td:hover button {
+    background-color: #C7C7C7;
+}
+
+
+.result td{
+    padding: 15px;
+    background-color: black;
+    /* border-color: black; */
+    color: #FFFFFF;
+    text-align: right;
+    font-size: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(144deg, #000000 25%, #18191a 25%, #18191a 50%, #000000 50%, #000000 75%, #18191a 75%, #18191a 100%);
+    background-size: 6.81px 4.94px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    font-size: 25px;
+    background-color: #FFFFFF;
+}
+
+#longTd {
+    height: 100%;
+    background-color: #EE784C;
+    border-left: 1px solid #C7C7C7;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+}
+
+#longButton {
+    height: 100%;
+    background-color: #EE784C;
+    border: none;
+}
+
+#longButton:hover, #longTd:hover {
+    background-color: #eb602d;
+}
+
+#longTd:hover button {
+    background-color: #eb602d;
+}
+

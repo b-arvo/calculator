@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="main.css">
+    <script type="text/javascript" src="calculator.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <table cellspacing='0' cellpadding='0'>
+            <tbody>
+                <tr class="result">
+                    <td colspan="4">0</td>
+                </tr>
+                <tr>
+                    <td class="bottom top" onclick="opPressed('+')"><button class='topRow' onclick="opPressed('+')" id='7'>+</button></td>
+                    <td class="bottom middle top" onclick="opPressed('-')"><button class='topRow' id='8'>-</button></td>
+                    <td class="bottom middle top" onclick="opPressed('*')" ><button class='topRow' id='9'>x</button></td>
+                    <td class="bottom middle top" onclick="opPressed('/')" ><button class='topRow' id='/'>÷</button></td>
+                </tr>
+                <tr>
+                    <td class="bottom" onclick='digitPressed(7)'><button id='7'>7</button></td>
+                    <td class="middle bottom" onclick='digitPressed(8)'><button id='8'>8</button></td>
+                    <td class="middle bottom" onclick='digitPressed(9)'><button id='9'>9</button></td>
+                    <td onclick="opPressed('=')" id="longTd" rowspan="4">=</td>
+                </tr>
+                <tr>
+                    <td class="bottom" onclick='digitPressed(4)'><button id='4'>4</button></td>
+                    <td class="middle bottom" onclick='digitPressed(5)'><button id='5'>5</button></td>
+                    <td class="middle bottom" onclick='digitPressed(6)'><button id='6'>6</button></td>
+                </tr>
+                <tr>
+                    <td class="bottom" onclick='digitPressed(1)'><button id='1'>1</button></td>
+                    <td class="middle bottom" onclick='digitPressed(2)'><button id='2'>2</button></td>
+                    <td class="middle bottom" onclick='digitPressed(3)'><button id='3'>3</button></td>
+                </tr>
+                <tr class="bottomRow">
+                    <td class="thisOne" onclick='digitPressed(0)'><button id='1'>0</button></td>
+                    <td class="middle" onclick="decimal()"><button  id='2'>.</button></td>
+                    <td class="middle" onclick="init()"><button id='3'>C</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
